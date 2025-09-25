@@ -1,0 +1,108 @@
+/* Reset and body styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+/* Form container */
+.form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  width: 360px;
+  text-align: center;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: slideIn 0.7s ease-out forwards;
+}
+
+/* Title styles */
+.brand {
+  font-size: 32px;
+  font-weight: bold;
+  color: #6c63ff;
+  margin-bottom: 5px;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+label {
+  text-align: left;
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+  outline: none;
+}
+
+/* Button */
+.btn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #574bdb;
+  transform: scale(1.05);
+}
+
+/* Login link */
+.login-link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
