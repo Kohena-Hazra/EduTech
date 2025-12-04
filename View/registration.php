@@ -8,11 +8,10 @@ require_once(__DIR__ . "/../Model/db.php");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduTech - Register</title>
-  <link rel="stylesheet" href="registration.css">
+  <link rel="stylesheet" href="css/registration.css">
   <script src="registration.js" defer></script>
 </head>
 <body>
-
   <div class="form-container">
     <h1 class="brand">EduTech</h1>
     <h2 class="form-title">Create Your Account</h2>
